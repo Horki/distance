@@ -5,7 +5,6 @@ Node + MongoDB + Redis + TypeScript
 ### Linux / SystemD
 
 #### Make sure Redis and MongoDB are installed and running
-
 ```bash
 systemctl status redis.serice
 systemctl status mongodb.serice
@@ -14,6 +13,11 @@ systemctl status mongodb.serice
 #### Import MongoDB database
 ```bash
 mongoimport --db Address --collection cities --file addresses.json
+```
+
+#### Make sure to create .env file
+```bash
+cp .env.development .env
 ```
 
 #### Install dependencies and run app
