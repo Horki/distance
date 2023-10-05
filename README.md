@@ -6,8 +6,8 @@ Node + MongoDB + Redis + TypeScript
 
 #### Make sure Redis and MongoDB are installed and running
 ```bash
-systemctl status redis.serice
-systemctl status mongodb.serice
+systemctl status redis.service
+systemctl status mongodb.service
 ```
 
 #### Import MongoDB database
@@ -27,8 +27,9 @@ pnpm start
 ```
 
 ## List of possible improvements
-| Feature | Description                                      | Status |
-|---------|--------------------------------------------------|-|
-| nix     | Write flake.nix and get everyting out of the box |-|
-| tests   | Write more tests                                 |-|
-| docs    | Write API documentation via [Swagger](https://swagger.io/resources/articles/documenting-apis-with-swagger/)          |-|
+| Feature | Description                                                                                                 | Status |
+|---------|-------------------------------------------------------------------------------------------------------------|-|
+| nix     | Write flake.nix and get everyting out of the box                                                            |-|
+| tests   | Write more tests                                                                                            |-|
+| ci      | Create CI/CD pipeline                                                                                       |-|
+| docs    | Write API documentation via [Swagger](https://swagger.io/resources/articles/documenting-apis-with-swagger/) |-|
