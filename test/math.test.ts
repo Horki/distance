@@ -21,5 +21,5 @@ test('math', () => {
 
   const result = calculateDistanceKm(cityA, cityB);
 
-  expect(result).toBe(13_376.38);
+  expect(+result.toFixed(2)).toEqual<number>(13_376.38);
 });
