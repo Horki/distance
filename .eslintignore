@@ -1,0 +1,5 @@
+## Please check .prettierignore when changing this file
+# ignore all but the whitelisted extensions
+*.*
+!*.json
+!*.ts
