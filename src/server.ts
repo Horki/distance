@@ -12,7 +12,7 @@ const server = app.listen(process.env.PORT, () => {
   const host = address?.address;
   const port = address?.port;
 
-  console.log('DISTANCE app listening at %s://%s:%s', process.env.PROTOCOL, host, port);
+  console.warn('DISTANCE app listening at %s://%s:%s', process.env.PROTOCOL, host, port);
 });
 
 const MONGO_URL = `mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}`;

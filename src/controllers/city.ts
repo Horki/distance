@@ -73,7 +73,7 @@ export const getArea = async (req: Request, res: Response) => {
   // @ts-ignore
   const job = await queue.add<AreaDistance>(
     { from, distance: distanceNumber },
-    { jobId: '2152f96f-50c7-4d76-9e18-f7033bd14428' },
+    { jobId: '2152f96f-50c7-4d76-9e18-f7033bd14428' }
   );
 
   return res.json({

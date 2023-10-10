@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 export const isAuthenticated = async (
   req: express.Request,
   res: express.Response,
-  next: express.NextFunction,
+  next: express.NextFunction
 ) => {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.startsWith('bearer') && authHeader.split(' ')[1];
