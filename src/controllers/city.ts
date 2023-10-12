@@ -76,7 +76,7 @@ export const getArea = async (req: Request, res: Response) => {
     { jobId: '2152f96f-50c7-4d76-9e18-f7033bd14428' }
   );
 
-  return res.json({
+  return res.status(202).json({
     resultsUrl: `${process.env.PROTOCOL}://${process.env.HOST}:${process.env.PORT}/area-result/${job.id}`,
   });
 };
